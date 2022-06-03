@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+#footer {
+    display: flex;
+    background-color: black;
+    height: 60px;
+    color: white;
+    font-size: 16px;
+    gap: 85%;
+  }
+
+#Seccion-tres{
+  display: flex;
+  padding: 3%;
+  gap: 30%;
+}
+
+.mapa_trabajos img{
+  height: 90px;
+  width: 90px;
+}
+
+.formulario{
+  size: 50px;
+  font-family:'inter';
+}
+
+.locacion img{
+  width: 20px;
+  height: 30px;   
+}
+
+.footer_iconos img{
+  width:30px;
+  height:30px;   
+  margin: 0px 10px 0px 0px; 
+}
+  
+  
