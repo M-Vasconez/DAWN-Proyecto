@@ -1,42 +1,42 @@
-html, body {
-    height: 100%;
-    width: 100%;
-  }
-  
-#footer {
-    display: flex;
-    background-color: black;
-    height: 60px;
-    color: white;
-    font-size: 16px;
-    gap: 85%;
-  }
-
-#Seccion-tres{
+body {
+  height: 100%;
+  width: 100%;
   display: flex;
-  padding: 3%;
-  gap: 30%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
 }
 
-.mapa_trabajos img{
-  height: 90px;
-  width: 90px;
+.half{
+  width:49%;
 }
 
-.formulario{
-  size: 50px;
-  font-family:'inter';
+header{
+  width: 100%;
+  border: 2px red;
+  background-color:blue;
 }
 
-.locacion img{
-  width: 20px;
-  height: 30px;   
+.Seccion2{
+  width: 100%;
 }
 
-.footer_iconos img{
-  width:30px;
-  height:30px;   
-  margin: 0px 10px 0px 0px; 
+#mapaTrabajos img{
+  width: 35%;
+  height: 35%";
 }
-  
-  
+
+footer{
+  background-color: black;
+  color:lightblue;
+  width:100%;
+  display:flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+
+footer img{
+  width: 15px;
+  height: 25px;
+}
