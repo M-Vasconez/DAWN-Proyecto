@@ -2,75 +2,106 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Portafolio</title>
   <link href="style.css" rel="stylesheet"/>
 </head>
 
 <body>
-  <header>
+  <header> 
     <h1>Portafolio</h1>
-    <h2>Me llamo: <br> Matias Vasconez</h2>
+    <nav>
+      <ul class="menuderecho">
+        <li><a>Estudios</a></li>
+        <li><a>Lenguajes</a></li>
+        <li><a href="#mapaTrabajos">Trabajos</a></li>
+        <li><a href="#formulario">Contacto</a></li>
+      </ul>
+    </nav>
+    <h2 id="Nombre">Me llamo: <br> Matias Vasconez</h2>
+    <img src="imagenes/perfil.jpg">
   </header>
 
-  <section class="Seccion2">
-      <div id="titulo2">
-        <h2>Trabajos</h2>
-      </div>
-      <div id="mapaTrabajos">
-        <table>
-          <tr>
-            <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
-            <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
-            <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
-            <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
-          </tr>
-          <tr>
-            <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
-            <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
-            <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
-            <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
-          </tr>
-        </table>
-      </div>
-    </section>
+  <div id="Estudios" class="half">
+    <h1>Estudios</h1>
+    <ul>
+      <li>Secundaria</li>
+      <li>Universidad</li>
+    </ul>
+  </div>
   
- 
-    <div id="formulario" class="half">
-      <form>
-        <p>Nombre y Apellido</p>
-        <input type="text">
-        <p>Correo Electronico</p>
-        <input type="email">
-        <p>Telefono</p>
-        <input type="number">
-        <p>Mensaje</p>
-        <textarea rows="10" cols="30">Escriba un mensaje</textarea>
-      </form>
-    </div>
+  <div class="Separador">
+    <hr>
+  </div>
 
-    <div id="mapa" class="half">
-      <iframe
-        width="600"
-        height="450"
-        style="border:0"
-        loading="lazy"
-        allowfullscreen
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps/embed/v1/place?key=API_KEY&q=Space+Needle,Seattle+WA">
-      </iframe>
+  <div id="Programacion" class="half">
+    <h1>Lenguajes de Programacion</h1>
+    <ul>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C</li>
+      <li>JavaScript</li>
+    </ul>
+  </div>
+
+  <section class="Seccion2">
+    <div id="titulo2">
+      <h2>Trabajos</h2>
     </div>
-  
+    <div id="mapaTrabajos">
+      <table>
+        <tr>
+          <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
+          <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
+          <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
+          <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
+        </tr>
+        <tr>
+          <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
+          <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
+          <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
+          <td><img src="https://1.bp.blogspot.com/-2e_rfV4USSc/WrFAXwF6w9I/AAAAAAAAMHA/lwAE5z2t8F8qPDqH9W5B6ixV6iAZtrpugCLcBGAs/s1600/Computadora-Escritorio.png"></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <div id="formulario" class="half">
+    <form>
+      <p>Nombre y Apellido</p>
+      <input type="text">
+      <p>Correo Electronico</p>
+      <input type="email">
+      <p>Telefono</p>
+      <input type="number">
+      <p>Mensaje</p>
+      <textarea rows="10" cols="30">Escriba un mensaje</textarea>
+    </form>
+  </div>
+
+  <div class="Separador">
+    <hr>
+  </div>
+
+  <div id="mapa" class="half">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63792.24264597484!2d-80.03460724179688!3d-2.1478802000000035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Politecnica%20del%20Litoral!5e0!3m2!1sen!2sec!4v1655058026674!5m2!1sen!2sec" 
+    width="600" height="450" style="border:0;" 
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  </div>
+
   <footer>
-    <div id="ubicacion" class="half">
+    <div id="ubicacion">
       <img src="http://www.clker.com/cliparts/T/3/M/y/X/d/redpindropnoshadow.svg" alt="Icono de mapa" >
       <span>Guayaqui,Ecuador</span>
     </div>
-    <div id="redesSociales" class="half">
+    <div id="redesSociales" >
         <img id="img/linkedIn" class="img_footer" src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt="linkedIn">
         <img id="img/Instagram" class="img_footer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt="Instagram">
         <img id="img/GitHub" class="img_footer" src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" alt="GitHub">
     </div>
   </footer>
+
+
 </body>
 </html>
