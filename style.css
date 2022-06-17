@@ -132,6 +132,7 @@ table td {
 #mapaTrabajos img{
   height: 60%;
   width: 70%;
+  box-shadow: 10px 15px 5px;
 }
 
 table a:hover .overlay {
@@ -169,7 +170,7 @@ table a:hover .overlay {
 }
 
 .half{
-  margin: 0 10% 0 10%;
+  margin: 1% 10% 1% 10%;
 }
 
 footer{
@@ -177,20 +178,41 @@ footer{
   background-color: #121212;
   width: 100%;
   height: 100%;
-  display: inline-flex;
+  display: flex;
   margin: 5% 0 0 0;
-  max-height: 40px;
+  flex-wrap: wrap;
+}
+
+#musicaFondo{
+  margin-top: 2%;
+  width: 100%;
 }
 
 footer img{
-  max-width: 65%;
-  max-height: 65%;
+  max-width: 15%;
+  max-height: 15%;
 }
 
-.redesSociales img{
-  display: flex;
-  justify-content: space-around;
+footer a img{
+  max-width: 40%;
+  max-height: 40%;
 }
+
+#ubicacion {
+  width: 50%;
+  margin-top: 1%;
+}
+
+#redesSociales{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#redesSociales img{
+  margin: 1% 1% 0 1%;
+}
+
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   header {
@@ -247,9 +269,38 @@ footer img{
     margin: 5% 0 5% 5%;
   }
 
+  #mapaTrabajos img{
+    height: 70%;
+    width: 70%;
+    box-shadow: 15% 5% 5px;
+  }
+
+  #mapa iframe{
+    width:100%; 
+    height: 90%;
+  }
+
   footer img{
-    max-width: 65%;
-    max-height: 65%;
+    max-width: 25%;
+    max-height: 25%;
+  }
+  
+  footer a img{
+    max-width: 60%;
+    max-height: 60%;
+  }
+
+  #ubicacion {
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: -20%;
+  }
+  
+  #redesSociales{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
   }
   
 }
