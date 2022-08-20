@@ -1,0 +1,28 @@
+$colorOeste: #C00712;
+$colorEste: #06407C;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+
+ion-header{
+    ion-toolbar{
+        padding: 10% 0;
+    }
+}
+
+#divOeste{
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 25%;
+    border-radius: 0 15px 15px 0 ;
+    background-color: $colorOeste;
+}
+
+#divEste{
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 25%;
+    border-radius: 0 15px 15px 0 ;
+    background-color: $colorEste;
+}

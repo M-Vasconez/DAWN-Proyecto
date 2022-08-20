@@ -1,0 +1,298 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Canadian Football league</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="listaYears">
+    <ion-list>
+      <ion-item>
+        <ion-select (ionChange)="handleChange($event)" interface="popover" placeholder="Selecciona una temporada">
+          <ion-select-option value="2022">2022</ion-select-option>
+          <ion-select-option value="2021">2021</ion-select-option>
+          <ion-select-option value="2019">2019</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </div>
+  
+
+  <div id="Oeste">
+    <ion-badge id="divOeste">Division Oeste</ion-badge>
+    <ion-row style="border-bottom: groove;">
+      <ion-col >
+        <ion-label >POS</ion-label>
+      </ion-col>
+      <ion-col size="3" >
+        <ion-label >Equipo</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >PJ</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >PG</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >PP</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >PE</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >PTS</ion-label>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row style="border-bottom: groove;">
+      <ion-col >
+        <ion-label>{{item[0].posicion}}</ion-label>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label >{{item[0].equipo}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[0].jugados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[0].ganados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[0].perdidos}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[0].empates}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[0].puntos}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="border-bottom: groove;">
+      <ion-col >
+        <ion-label>{{item[1].posicion}}</ion-label>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label >{{item[1].equipo}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[1].jugados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[1].ganados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[1].perdidos}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[1].empates}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[1].puntos}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="border-bottom: groove;">
+      <ion-col >
+        <ion-label>{{item[2].posicion}}</ion-label>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label >{{item[2].equipo}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[2].jugados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[2].ganados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[2].perdidos}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[2].empates}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[2].puntos}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="border-bottom: groove;">
+      <ion-col >
+        <ion-label>{{item[3].posicion}}</ion-label>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label >{{item[3].equipo}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[3].jugados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[3].ganados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[3].perdidos}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[3].empates}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[3].puntos}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="border-bottom: groove;">
+      <ion-col >
+        <ion-label>{{item[4].posicion}}</ion-label>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label >{{item[4].equipo}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[4].jugados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[4].ganados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[4].perdidos}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[4].empates}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[4].puntos}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    
+    
+    
+  </div>
+  
+  <div id="Este">
+    <ion-badge id="divEste">Division Este</ion-badge>
+
+    <ion-row style="border-bottom: groove;">
+      <ion-col >
+        <ion-label >POS</ion-label>
+      </ion-col>
+      <ion-col size="3" >
+        <ion-label >Equipo</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >PJ</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >PG</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >PP</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >PE</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >PTS</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="border-bottom: groove;">
+      <ion-col >
+        <ion-label>{{item[5].posicion}}</ion-label>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label >{{item[5].equipo}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[5].jugados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[5].ganados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[5].perdidos}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[5].empates}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[5].puntos}}</ion-label>
+      </ion-col>
+    </ion-row>
+   
+    <ion-row style="border-bottom: groove;">
+      <ion-col >
+        <ion-label>{{item[6].posicion}}</ion-label>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label >{{item[6].equipo}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[6].jugados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[6].ganados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[6].perdidos}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[6].empates}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[6].puntos}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="border-bottom: groove;">
+      <ion-col >
+        <ion-label>{{item[7].posicion}}</ion-label>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label >{{item[7].equipo}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[7].jugados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[7].ganados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[7].perdidos}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[7].empates}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[7].puntos}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="border-bottom: groove;">
+      <ion-col >
+        <ion-label>{{item[8].posicion}}</ion-label>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label >{{item[8].equipo}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[8].jugados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[8].ganados}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[8].perdidos}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[8].empates}}</ion-label>
+      </ion-col>
+      <ion-col >
+        <ion-label >{{item[8].puntos}}</ion-label>
+      </ion-col>
+    </ion-row>
+    
+  </div>
+  
+</ion-content>

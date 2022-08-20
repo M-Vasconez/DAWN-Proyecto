@@ -1,0 +1,407 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Canadian Football league</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="listaYears">
+    <ion-list>
+      <ion-item>
+        <ion-select (ionChange)="handleChange($event)" interface="popover" placeholder="Selecciona un id de usuario">
+          <ion-select-option value="4">4</ion-select-option>
+          <ion-select-option value="14">14</ion-select-option>
+          <ion-select-option value="24">24</ion-select-option>
+          <ion-select-option value="34">34</ion-select-option>
+          <ion-select-option value="44">44</ion-select-option>
+          <ion-select-option value="54">54</ion-select-option>
+          <ion-select-option value="64">64</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </div>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Hola {{item.nombre}} {{item.apellido}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-content>
+      <ion-label>Estos son sus partidos esta temporada de tu equipo favorito:</ion-label>
+    </ion-card-content> 
+  </ion-card> 
+  
+  <ion-row  style="border-bottom: groove;">
+    <ion-col size="3">
+      <ion-label>11 de Junio</ion-label>
+      <ion-label><br>Finalizo</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[0].equipo1_id-1]}}.png"> </ion-img>
+    </ion-col>
+    <ion-col>
+      <ion-label >{{lista_abreviacion[partido[0].equipo1_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[0].puntaje_equipo1}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >@</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[0].puntaje_equipo2}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{lista_abreviacion[partido[0].equipo2_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[0].equipo2_id-1]}}.png"> </ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-row  style="border-bottom: groove;">
+    <ion-col size="3">
+      <ion-label>12 de Junio</ion-label>
+      <ion-label><br>Finalizo</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[1].equipo1_id-1]}}.png"> </ion-img>
+    </ion-col>
+    <ion-col>
+      <ion-label >{{lista_abreviacion[partido[1].equipo1_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[1].puntaje_equipo1}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >@</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[1].puntaje_equipo2}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{lista_abreviacion[partido[1].equipo2_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[1].equipo2_id-1]}}.png"> </ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-row  style="border-bottom: groove;">
+    <ion-col size="3">
+      <ion-label>13 de Junio</ion-label>
+      <ion-label><br>Finalizo</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[2].equipo1_id-1]}}.png"> </ion-img>
+    </ion-col>
+    <ion-col>
+      <ion-label >{{lista_abreviacion[partido[2].equipo1_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[2].puntaje_equipo1}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >@</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[2].puntaje_equipo2}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{lista_abreviacion[partido[2].equipo2_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[2].equipo2_id-1]}}.png"> </ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-row  style="border-bottom: groove;">
+    <ion-col size="3">
+      <ion-label>14 de Junio</ion-label>
+      <ion-label><br>Finalizo</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[3].equipo1_id-1]}}.png"> </ion-img>
+    </ion-col>
+    <ion-col>
+      <ion-label >{{lista_abreviacion[partido[3].equipo1_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[3].puntaje_equipo1}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >@</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[3].puntaje_equipo2}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{lista_abreviacion[partido[3].equipo2_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[3].equipo2_id-1]}}.png"> </ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-row  style="border-bottom: groove;">
+    <ion-col size="3">
+      <ion-label>15 de Junio</ion-label>
+      <ion-label><br>Finalizo</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[4].equipo1_id-1]}}.png"> </ion-img>
+    </ion-col>
+    <ion-col>
+      <ion-label >{{lista_abreviacion[partido[4].equipo1_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[4].puntaje_equipo1}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >@</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[4].puntaje_equipo2}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{lista_abreviacion[partido[4].equipo2_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[4].equipo2_id-1]}}.png"> </ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-row  style="border-bottom: groove;">
+    <ion-col size="3">
+      <ion-label>16 de Junio</ion-label>
+      <ion-label><br>Finalizo</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[5].equipo1_id-1]}}.png"> </ion-img>
+    </ion-col>
+    <ion-col>
+      <ion-label >{{lista_abreviacion[partido[5].equipo1_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[5].puntaje_equipo1}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >@</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[5].puntaje_equipo2}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{lista_abreviacion[partido[5].equipo2_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[5].equipo2_id-1]}}.png"> </ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-row  style="border-bottom: groove;">
+    <ion-col size="3">
+      <ion-label>19 de Junio</ion-label>
+      <ion-label><br>Finalizo</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[6].equipo1_id-1]}}.png"> </ion-img>
+    </ion-col>
+    <ion-col>
+      <ion-label >{{lista_abreviacion[partido[6].equipo1_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[6].puntaje_equipo1}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >@</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[6].puntaje_equipo2}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{lista_abreviacion[partido[6].equipo2_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[6].equipo2_id-1]}}.png"> </ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-row  style="border-bottom: groove;">
+    <ion-col size="3">
+      <ion-label>21 de Junio</ion-label>
+      <ion-label><br>Finalizo</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[7].equipo1_id-1]}}.png"> </ion-img>
+    </ion-col>
+    <ion-col>
+      <ion-label >{{lista_abreviacion[partido[7].equipo1_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[7].puntaje_equipo1}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >@</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[7].puntaje_equipo2}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{lista_abreviacion[partido[7].equipo2_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[7].equipo2_id-1]}}.png"> </ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-row  style="border-bottom: groove;">
+    <ion-col size="3">
+      <ion-label>22 de Junio</ion-label>
+      <ion-label><br>Finalizo</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[8].equipo1_id-1]}}.png"> </ion-img>
+    </ion-col>
+    <ion-col>
+      <ion-label >{{lista_abreviacion[partido[8].equipo1_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[8].puntaje_equipo1}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >@</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{partido[8].puntaje_equipo2}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{lista_abreviacion[partido[8].equipo2_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[8].equipo2_id-1]}}.png"> </ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-row  style="border-bottom: groove;">
+    <ion-col size="3">
+      <ion-label>25 de Junio</ion-label>
+      <ion-label><br></ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[9].equipo1_id-1]}}.png"> </ion-img>
+    </ion-col>
+    <ion-col>
+      <ion-label >{{lista_abreviacion[partido[9].equipo1_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label ></ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >@</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label ></ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{lista_abreviacion[partido[9].equipo2_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[9].equipo2_id-1]}}.png"> </ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-row  style="border-bottom: groove;">
+    <ion-col size="3">
+      <ion-label>29 de Junio</ion-label>
+      <ion-label><br></ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[10].equipo1_id-1]}}.png"> </ion-img>
+    </ion-col>
+    <ion-col>
+      <ion-label >{{lista_abreviacion[partido[10].equipo1_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label ></ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >@</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label ></ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{lista_abreviacion[partido[10].equipo2_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[10].equipo2_id-1]}}.png"> </ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-row  style="border-bottom: groove;">
+    <ion-col size="3">
+      <ion-label>1 de Julio</ion-label>
+      <ion-label><br></ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[11].equipo1_id-1]}}.png"> </ion-img>
+    </ion-col>
+    <ion-col>
+      <ion-label >{{lista_abreviacion[partido[11].equipo1_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label ></ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >@</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label ></ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{lista_abreviacion[partido[11].equipo2_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[11].equipo2_id-1]}}.png"> </ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-row  style="border-bottom: groove;">
+    <ion-col size="3">
+      <ion-label>9 de Julio</ion-label>
+      <ion-label><br></ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[12].equipo1_id-1]}}.png"> </ion-img>
+    </ion-col>
+    <ion-col>
+      <ion-label >{{lista_abreviacion[partido[12].equipo1_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label ></ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >@</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label ></ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-label >{{lista_abreviacion[partido[12].equipo2_id-1]}}</ion-label>
+    </ion-col>
+    <ion-col >
+      <ion-img src="../../assets/Team icons/{{lista_abreviacion[partido[12].equipo2_id-1]}}.png"> </ion-img>
+    </ion-col>
+  </ion-row>
+
+ 
+
+  
+
+  
+  
+
+</ion-content>
