@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Portafolio</title>
+  <link rel="icon" typer="image/x-icon" href="./media/computer.png">
+  <link href="style.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header> 
+    <h1>Portafolio</h1>
+    <nav class="navMenu">
+      <ul class="menuderecho">
+        <a href="#Estudios">Estudios</a>
+        <a href="#Programacion">Lenguajes</a>
+        <a href="#mapaTrabajos">Trabajos</a>
+        <a href="#formulario">Contacto</a>
+      </ul>
+    </nav>
+    <h2 id="Name">Me llamo: <br> Matias Vasconez</h2>
+    <img id="Foto_perfil" src="./media/perfil_Final.jpg">
+  </header>
+
+  <div id="Estudios" class="half">
+    <h1>Estudios</h1>
+    <ul>
+      <li>Secundaria: Unidad Educativa Pasionista<br>Guayaqui,Ecuador</li>
+      <br>
+      <li>Universidad: Escuela Superior Politecnica del Litoral<br>Guayaqui,Ecuador</li>
+    </ul>
+  </div>
+  
+ 
+  <div id="Programacion" class="half">
+    <h1>Lenguajes de Programacion</h1>
+    <ul>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C</li>
+      <li>JavaScript</li>
+      <li>Go</li>
+    </ul>
+  </div>
+
+  <section class="Seccion2">
+    <div id="titulo2">
+      <h2>Trabajos</h2>
+    </div>
+    <div id="mapaTrabajos">
+      <table>
+        <!--Se implemento imagenes locales debido a que se tardaban mucho en cargar-->
+        <tr>
+          <td id="PaginaWeb">
+            <a href="https://github.com/M-Vasconez/DAWN-Proyecto" target="_blank">
+              <div class="container">
+                <img src="./media/DisignWeb.jpg" alt="Diseno web">
+                <div class="overlay">
+                  <div class="text">Diseno Web</div>
+                </div>
+              </div>
+            </a>
+          </td>
+          <td id="RadioCanela">
+            <a href="https://github.com/juanjofs96/appradioadmin" target="_blank">
+              <div class="container">
+                <img src="https://static.mytuner.mobi/media/tvos_radios/pWvzQWMV6e.jpg" alt="Radio Canela">
+                <div class="overlay">
+                  <div class="text">Radio Canela</div>
+                </div>
+              </div>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td id="Automatizador de colores">
+            <a href="https://github.com/jazch08/Proyecto1P-EDD" target="_blank">
+              <div class="container">
+                <img src="./media/Automatizador.webp" alt="Automatizador de colores">
+                <div class="overlay">
+                  <div class="text">Automatizador de colores</div>
+                </div>
+              </div>
+            </a>
+          </td>
+          <td id="Identificador de GiNi">
+            <a href="https://github.com/M-Vasconez/Proyecto2P-ED" target="_blank">
+              <div class="container">
+                <img src="./media/Gini.png" alt="Automatizador de Gini">
+                <div class="overlay">
+                  <div class="text">Identificador de GINI</div>
+                </div>
+              </div>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <div id="formulario" class="half">
+    <form>
+      <p>Nombre y Apellido</p>
+      <input type="text">
+      <p>Correo Electronico</p>
+      <input type="email">
+      <p>Telefono</p>
+      <input type="number">
+      <p>Mensaje</p>
+      <textarea rows="10" cols="30">Escriba un mensaje</textarea>
+    </form>
+  </div>
+
+  
+
+  <div id="mapa" class="half">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63792.24264597484!2d-80.03460724179688!3d-2.1478802000000035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Politecnica%20del%20Litoral!5e0!3m2!1sen!2sec!4v1655058026674!5m2!1sen!2sec" 
+    width="600" height="450" style="border: 10px;" 
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  </div>
+
+  <footer>
+    <div id="musicaFondo">
+      <audio controls loop><source src="./media/Caslo - LATINA.mp3" type="audio/mpeg"></audio>
+      <span>"LATINA" by <a href="www.caslobeats.com"  target="_blank">Caslo</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank">CC BY-NC-ND 4.0</a></span>
+    </div>
+    <div id="ubicacion">
+      <img src="http://www.clker.com/cliparts/T/3/M/y/X/d/redpindropnoshadow.svg" alt="Icono de mapa" >
+      <span>Guayaqui,Ecuador</span>
+    </div>
+    <div id="redesSociales" >
+        <a href="https://github.com/M-Vasconez"  target="_blank">
+          <img id="img/GitHub" class="img_footer" src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" alt="GitHub">
+        </a>
+        <a href="https://www.instagram.com/matiasvg_42/"  target="_blank">
+          <img id="img/Instagram" class="img_footer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/"  target="_blank">
+          <img id="img/linkedIn" class="img_footer" src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt="linkedIn">
+        </a>
+        
+    </div>
+  </footer>
+
+
+</body>
+</html>
