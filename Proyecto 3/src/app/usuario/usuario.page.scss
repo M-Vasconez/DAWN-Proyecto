@@ -2,6 +2,18 @@
 
 ion-header{
     ion-toolbar{
+        ion-img{
+            width: 20%;
+            height: 20%;
+            max-height: fit-content;
+            max-width: fit-content;
+        }
+    
+        ion-row{
+            padding-left: 10%;
+            padding-right: 0%;
+        }
+
         padding: 10% 0;
     }
 }
@@ -24,6 +36,10 @@ ion-label{
 ion-img{
     width:30px; 
     height:30px;
-    max-width: 40px;
+    max-width: fit-content;
     max-height: fit-content;
+}
+
+.fila{
+    font-size: smaller;
 }

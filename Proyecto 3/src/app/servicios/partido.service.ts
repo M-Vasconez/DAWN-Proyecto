@@ -8,7 +8,7 @@ export class PartidoService {
 
   constructor(private http: HttpClient) { }
   obtenerJuegos() {
-    return this.http.get('https://enigmatic-castle-01537.herokuapp.com/api/juegos')
+    return this.http.get('https://www.thesportsdb.com/api/v1/json/2/eventsseason.php?id=4405&s=2022')
   }
 
   obtenerJuegosPorEquipo(equipo: number) {

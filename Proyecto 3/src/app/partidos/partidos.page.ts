@@ -11,6 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PartidosPage implements OnInit {
   lista_equipos =["BC","CGY","EDM","HAM","MTL","OTT","SSK","TOR","WPG"];
+  
 
   item: Partido = {
   id: 0,
@@ -23,23 +24,19 @@ export class PartidosPage implements OnInit {
    puntaje_equipo2: 0,
   };
 
-  constructor(private juegoService:PartidoService,private activatedRoute: ActivatedRoute){}
+  dataSource:any = [];
+
+  
+
+  constructor(private juegoService:PartidoService){}
 
   ngOnInit() {
     
     this.juegoService.obtenerJuegos().subscribe(res =>{
-      this.item = res as Partido;
+      this.dataSource = res as any;
+      console.log(this.dataSource.events);
     })
-
-    let params = this.activatedRoute.snapshot.params;
-    let id = params["id"];
-    this.juegoService.obtenerJuegosPorEquipo(id).subscribe(res =>{
-      this.item = res as Partido;
-    })
-    
-  }
-
-  
+  }  
 }
 
 

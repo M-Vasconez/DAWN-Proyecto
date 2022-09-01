@@ -147,7 +147,7 @@ TabsPage = (0,tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([
   \************************************************/
 /***/ ((module) => {
 
-module.exports = "ion-tabs ion-tab-bar {\n  color: #AA2630;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRhYnMucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNJO0VBQ0ksY0FBQTtBQUFSIiwiZmlsZSI6InRhYnMucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW9uLXRhYnN7XG4gICAgaW9uLXRhYi1iYXJ7XG4gICAgICAgIGNvbG9yOiNBQTI2MzBcbiAgICB9XG59XG4iXX0= */";
+module.exports = "ion-tabs ion-tab-bar {\n  color: #AA2630;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRhYnMucGFnZS5zY3NzIiwiLi5cXC4uXFwuLlxcLi5cXC4uXFwuLlxcMSUyMERBV01cXERBV04tUHJveWVjdG9cXFByb3llY3RvJTIwM1xcc3JjXFxhcHBcXHRhYnNcXHRhYnMucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNJO0VBQ0ksY0FBQTtBQ0FSIiwiZmlsZSI6InRhYnMucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW9uLXRhYnN7XG4gICAgaW9uLXRhYi1iYXJ7XG4gICAgICAgIGNvbG9yOiNBQTI2MzBcbiAgICB9XG59XG4iLCJpb24tdGFicyBpb24tdGFiLWJhciB7XG4gIGNvbG9yOiAjQUEyNjMwO1xufSJdfQ== */";
 
 /***/ }),
 

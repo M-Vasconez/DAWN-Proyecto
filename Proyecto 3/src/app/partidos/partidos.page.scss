@@ -2,9 +2,23 @@
 
 ion-header{
     ion-toolbar{
+        ion-img{
+            width: 20%;
+            height: 20%;
+            max-height: fit-content;
+            max-width: fit-content;
+        }
+    
+        ion-row{
+            padding-left: 10%;
+            padding-right: 0%;
+        }
+
         padding: 10% 0;
     }
 }
+
+
 
 .titulo{
     font-family: 'Khand', sans-serif;

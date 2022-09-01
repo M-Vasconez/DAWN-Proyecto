@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from '../servicios/usuario.service';
 import { Usuario } from '../interfaz/usuario';
 import { PartidoService } from '../servicios/partido.service';
-import { Partido } from '../interfaz/partido'
+import { EquipoService } from '../servicios/equipo.service';
+import { Equipo } from '../interfaz/equipo';
+
 
 
 let id_usuario:number = 4;
@@ -13,9 +15,6 @@ let id_usuario:number = 4;
   styleUrls: ['./usuario.page.scss'],
 })
 export class UsuarioPage implements OnInit {
-  lista_equipos =["BC Lions","Calgary Stampeders","Edmonton Elks","Hamilton Tiger-Cats","Montreal Alouettes","Ottawa Redblacks",
-  "Saskatchewan Roughriders","Toronto Argonauts","Winnipeg Blue Bombers"];
-  lista_abreviacion =["BC","CGY","EDM","HAM","MTL","OTT","SSK","TOR","WPG"];
 
   item: Usuario = {
     id: 0,
@@ -26,34 +25,48 @@ export class UsuarioPage implements OnInit {
     equipo_id: 0,
   };
 
-  partido: Partido = {
+  equipo: Equipo = {
     id: 0,
-     temporada: 2022,
-     semana: 0,
-     id_estadio: 0,
-     equipo1_id: 0,
-     puntaje_equipo1: 0,
-     equipo2_id: 0,
-     puntaje_equipo2: 0,
-    };
+    nombre: "",
+    ubicacion: "",
+    division: "",
+    abreviacion: "",
+    estadio_id: 0,
+    estadio: "",
+  };
+ 
 
   handleChange(e){
     id_usuario = e.detail.value;
+    this.datosFiltrados = []
     this.ngOnInit();
   }
 
-  constructor(private usuarioService:UsuarioService, private partidoService:PartidoService ) { }
+  
+  dataSource:any = [];
+  datosFiltrados:any = [];
+ 
 
-  ngOnInit() {
+  constructor(private usuarioService:UsuarioService, private equipoService:EquipoService, private partidoService:PartidoService) { }
+
+   async ngOnInit() {
+
     this.usuarioService.obtenerUsuarioPorId(id_usuario).subscribe(respuesta => {
       this.item = respuesta as Usuario;
     })
 
-    console.log("Equipo id: ",this.item.equipo_id);
+    await this.equipoService.obtenerEquiposPorId(this.item.equipo_id).subscribe(respuesta => {
+       this.equipo = respuesta as Equipo;
+    });
 
-    this.partidoService.obtenerJuegosPorEquipo(this.item.equipo_id).subscribe( res => {
-      this.partido = res as Partido;
-      
+
+    await this.partidoService.obtenerJuegos().subscribe( res => {
+      this.dataSource = res as any;
+      for(let juegos of this.dataSource.events){
+        if(juegos.strAwayTeam == this.equipo.nombre || juegos.strHomeTeam == this.equipo.nombre){
+          this.datosFiltrados.push(juegos);
+        }
+      }
     })
 
   }
